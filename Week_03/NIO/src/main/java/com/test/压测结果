@@ -1,0 +1,47 @@
+增加线程后：Runtime.getRuntime().availableProcessors()+2
+siege -c 40 -t 30S http://localhost:8081/
+
+Lifting the server siege...      done.
+siege aborted due to excessive socket failure; you
+can change the failure threshold in $HOME/.siegerc
+
+Transactions:		        1335 hits
+Availability:		       56.45 %
+Elapsed time:		       29.84 secs
+Data transferred:	        0.00 MB
+Response time:		        0.00 secs
+Transaction rate:	       44.74 trans/sec
+Throughput:		        0.00 MB/sec
+Concurrency:		        0.15
+Successful transactions:        1335
+Failed transactions:	        1030
+Longest transaction:	        0.05
+Shortest transaction:	        0.00
+
+FILE: /usr/local/var/siege.log
+You can disable this annoying message by editing
+the .siegerc file in your home directory; change
+the directive 'show-logfile' to false.
+
+增加线程后：Runtime.getRuntime().availableProcessors()+100
+Lifting the server siege...      done.
+siege aborted due to excessive socket failure; you
+can change the failure threshold in $HOME/.siegerc
+
+Transactions:		        1249 hits
+Availability:		       54.35 %
+Elapsed time:		       29.65 secs
+Data transferred:	        0.00 MB
+Response time:		        0.00 secs
+Transaction rate:	       42.12 trans/sec
+Throughput:		        0.00 MB/sec
+Concurrency:		        0.13
+Successful transactions:        1249
+Failed transactions:	        1049
+Longest transaction:	        0.08
+Shortest transaction:	        0.00
+
+FILE: /usr/local/var/siege.log
+You can disable this annoying message by editing
+the .siegerc file in your home directory; change
+the directive 'show-logfile' to false.
